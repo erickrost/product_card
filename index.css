@@ -3,6 +3,10 @@
     font-size: 16px;
 }
 
+html {
+    width: 100%;
+}
+
 body {
     height: 100h;
     background-color: #f3eae3;
@@ -10,10 +14,13 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Crimson Text', serif;
+    width: 100%;
 }
 
 .product {
     display: flex;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .card-image {
@@ -57,6 +64,7 @@ body {
     letter-spacing: 6px;
     margin-bottom: 12px;
     margin-left: 32px;
+    margin-top: 32px;
 }
 
 .product-name {
@@ -95,10 +103,16 @@ body {
     display: flex;
 }
 
+.icon {
+    margin-right: 8px;
+}
+
 .butão {
     padding: 16px;
     border-radius: 8px;
     background-color: #3d8168;
     color: white;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
+    padding: 16px 64px 16px 64px;
+
 }
