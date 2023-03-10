@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    font-size: 16px;
+}
+
+body {
+    height: 100h;
+    background-color: #f3eae3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Crimson Text', serif;
+}
+
+.product {
+    display: flex;
+}
+
+.card-image {
+    width: 300px;
+}
+
+@media screen and (max-width: 489px) {
+    .swapimg {
+        display: none;
+    }
+
+    .visible-mobile {
+        width: 100%;
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 763px) {
+    .swapimg {
+        display: none;
+    }
+
+    .visible-desktop {
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+        width: 100%;
+        display: inline;
+    }
+}
+
+.card-content {
+    background-color: white;
+    width: 300px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+
+.product-type {
+    color: #7d7d87;
+    letter-spacing: 6px;
+    margin-bottom: 12px;
+    margin-left: 32px;
+}
+
+.product-name {
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 12px;
+    margin-left: 32px;
+}
+
+.product-description {
+    color: #7d7d87;
+    margin-left: 32px;
+}
+
+.product-value {
+    display: flex;
+    margin-top: 12px;
+}
+
+.product-main-value {
+    color: #3d8168;
+    font-size: 32px;
+    font-weight: 700;
+    margin-left: 32px;
+    margin-right: 16px;
+    margin-bottom: 12px;
+}
+
+.product-after-value {
+    text-decoration: line-through;
+    color: #7d7d87;
+}
+
+.button {
+    justify-content: center;
+    display: flex;
+}
+
+.butão {
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #3d8168;
+    color: white;
+    margin-bottom: 32px;
+}
