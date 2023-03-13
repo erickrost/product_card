@@ -23,7 +23,7 @@ body {
 }
 
 .card-content {
-    max-height: 50vh;
+    height: 386px;
     max-width: 300px;
     background-color: white;
     padding: 32px;
