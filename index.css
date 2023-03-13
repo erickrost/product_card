@@ -4,30 +4,31 @@
 }
 
 body {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    vertical-align: middle;
     background-color: #f3eae3;
     font-family: 'Crimson Text', serif;
 }
 
 .product {
     display: flex;
-    max-height: 70vh;
 }
 
 .card-image {
     max-width: 300px;
+    max-height: 50vh;
+
 }
 
 .card-content {
-    max-height: 100x;
+    max-height: 50vh;
     max-width: 300px;
     background-color: white;
     padding: 32px;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .product-type {
@@ -35,13 +36,6 @@ body {
     letter-spacing: 3px;
     color: #6b6e77;
     margin-bottom: 16px;
-    font-weight: 700;
-}
-
-.product-name {
-    font-size: 32px;
-    line-height: 1;
-    margin-bottom: 18px;
     font-weight: 700;
 }
 
@@ -72,6 +66,12 @@ body {
     text-decoration: line-through;
 }
 
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .butão {
     background-color: #406f5d;
     color: white;
@@ -92,9 +92,49 @@ body {
         display: none;
     }
 
+    .product-name-large {
+        display: none;
+    }
+
+    .card-image {
+        width: 332px;
+        max-width: 375px;
+    }
+
     .visible-mobile {
         width: 100%;
-        display: inline;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        display: flex;
+        object-fit: cover;
+    }
+
+    .product {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        object-fit: cover;
+    }
+
+    .card-content {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 0;
+        padding: 16px;
+        padding-top: 0;
+        width: 330px;
+    }
+
+    .product-name-small {
+        font-size: 32px;
+        line-height: 1;
+        margin-bottom: 18px;
+        font-weight: 700;
+    }
+
+    .butão {
+        padding: 8px 64px 8px 64px;
     }
 }
 
@@ -103,9 +143,20 @@ body {
         display: none;
     }
 
+    .product-name-small {
+        display: none;
+    }
+
+    .product-name-large {
+        font-size: 32px;
+        line-height: 1;
+        margin-bottom: 18px;
+        font-weight: 700;
+    }
+
     .visible-desktop {
-        border-top-left-radius: 12px;
-        border-bottom-left-radius: 12px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
         width: 100%;
         display: inline;
     }
