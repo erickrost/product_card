@@ -96,6 +96,10 @@ body {
         display: none;
     }
 
+    .product-type {
+        margin-top: 16px;
+    }
+
     .card-image {
         width: 332px;
         max-width: 375px;
